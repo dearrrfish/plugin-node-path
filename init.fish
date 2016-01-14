@@ -1,5 +1,6 @@
-function init -a path --on-event init_node_path
+begin
     set -l load ''
+
     if set -q NVM_DIR; and test -e $NVM_DIR/.node_path.load
         cat $NVM_DIR/.node_path.load | read load
 
